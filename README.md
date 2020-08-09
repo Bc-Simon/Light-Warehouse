@@ -43,6 +43,12 @@ mvn spring-boot:run
 ## UI Design
 Simply click the tabs and switch to product/ stock panel.
 
+## Daily Notes
+
+[link to Daily Note](https://docs.google.com/document/d/1zSvQhru3gsgZ6Eu3doy-KdvCRkPKnuTo5pb4KNcdS_8/edit?usp=sharing)
+
+#Features
+
 ## Products
 
 ### Search Bar
@@ -88,7 +94,3 @@ Click the rubbish bin icon to delete the new record.
 
 ### Tranfser Stock
 Click the exchange icon to Tranfser the stock to another location.
-
-## Daily Notes
-
-[link to Daily Note](https://docs.google.com/document/d/1zSvQhru3gsgZ6Eu3doy-KdvCRkPKnuTo5pb4KNcdS_8/edit?usp=sharing)
