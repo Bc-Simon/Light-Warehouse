@@ -1,0 +1,57 @@
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Product Code</th>
+    <th>Location</th>
+    <th>Quantity</th>
+    <th><button type="button" class="btn btn-primary" ng-click="addStock()">New Stock</button></th>
+    <th>
+      <input type="file" file-model="myFile"/>
+      <button type="button" class="btn btn-primary" ng-click="uploadCSV()">Upload CSV</button>
+    </th>
+    <th><button type="button" class="btn btn-primary" ng-click="downloadStockCSV()">Download CSV</button></th>
+  </tr>
+  </thead>
+  <tr ng-repeat="stock in stocks | filter:searchText">
+    <th>
+      <span ng-if="!stock.isEditing || stock.type !='new'">
+        {{stock.code}}
+      </span>
+      <span ng-if="stock.isEditing && stock.type =='new'">
+        <input ng-model="stock.code" type="text">
+      </span>
+    </th>
+    <th>
+      <span ng-if="!stock.isEditing || stock.type !='new'">
+        {{stock.location}}
+      </span>
+      <span ng-if="stock.isEditing && stock.type =='new'">
+        <input ng-model="stock.location" type="text">
+      </span>
+    </th>
+    <th>
+      <span ng-if="!stock.isEditing">
+        {{stock.quantity}}
+      </span>
+      <span ng-if="stock.isEditing">
+        <input ng-model="stock.quantity" type="text">
+      </span>
+    </th>
+    <th colspan="3" style="text-align: center" ng-if="!stock.isTransfering">
+      <i class="fa fa-pencil" aria-hidden="true" ng-if="!stock.isEditing" ng-click="editStock(stock)"></i>
+      <i class="fa fa-trash" aria-hidden="true" ng-if="!stock.isEditing" ng-click="deleteStock(stock)"></i>
+      <i class="fa fa-exchange" aria-hidden="true" ng-if="!stock.isEditing" ng-click="transferStock(stock)"></i>
+      <button type="button" class="btn btn-primary" ng-if="stock.isEditing"ng-click="saveStock(stock)">Save</button>
+    </th>
+    <th ng-if="stock.isTransfering">
+      <input ng-model="stock.targetLocation" type="text" placeholder="To Which Location?">
+    </th>
+    <th ng-if="stock.isTransfering">
+      <input ng-model="stock.transferQuantity" type="text" placeholder="How many stock to transfer">
+    </th>
+    <th ng-if="stock.isTransfering">
+      <button type="button" class="btn btn-primary" ng-click="submitTransfer(stock)">Submit</button>
+    </th>
+  </tr>
+</table>
+<label>Search: <input ng-model="searchText"></label>
