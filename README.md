@@ -44,7 +44,7 @@ Simply click the tabs and switch to product/ stock panel.
 
 [link to Analysis](https://docs.google.com/document/d/1OjGQ-cSAmY4GcJQYGsFCcUdXkuw6Ae0MDnQ10HItohM/edit?usp=sharing)
 
-## Daily Notes
+## Development Notes
 
-[link to Daily Note](https://docs.google.com/document/d/1zSvQhru3gsgZ6Eu3doy-KdvCRkPKnuTo5pb4KNcdS_8/edit?usp=sharing)
+[link to Development Notes](https://docs.google.com/document/d/1zSvQhru3gsgZ6Eu3doy-KdvCRkPKnuTo5pb4KNcdS_8/edit?usp=sharing)
 
