@@ -35,13 +35,14 @@ Run the following commands to compile the web application.
 ```sh
 mvn spring-boot:run
 ```
+After compile it successfully, browser [localhost:8080] on browser to access the web application.
+
+## UI Design
+Simply click the tabs and switch to product/ stock panel.
 
 ## System Design and Requirement Analysis
 
 [link to Analysis](https://docs.google.com/document/d/1OjGQ-cSAmY4GcJQYGsFCcUdXkuw6Ae0MDnQ10HItohM/edit?usp=sharing)
-
-## UI Design
-Simply click the tabs and switch to product/ stock panel.
 
 ## Daily Notes
 
